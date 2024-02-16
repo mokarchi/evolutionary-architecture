@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>    
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
+    <NoWarn>1701;1702</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,10 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Fitnet\Fitnet.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.19.0.84025" />
   </ItemGroup>
 
 </Project>
