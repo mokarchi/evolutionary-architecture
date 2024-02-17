@@ -2,8 +2,8 @@
 
 using Common.Events;
 using Common.Events.EventBus;
+using Data;
 using Data.Database;
-using EvolutionaryArchitecture.Fitnet.Offers.Data;
 using Passes.MarkPassAsExpired.Events;
 
 internal sealed class PassExpiredEventHandler(
