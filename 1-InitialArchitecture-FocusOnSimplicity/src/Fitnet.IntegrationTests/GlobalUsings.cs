@@ -1,3 +1,4 @@
-// Global using directives
+﻿// Global using directives
 
-global using System;
+global using System.Net;
+global using System.Net.Http.Json;
