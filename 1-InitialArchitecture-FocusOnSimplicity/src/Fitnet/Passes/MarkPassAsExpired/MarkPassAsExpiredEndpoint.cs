@@ -15,7 +15,7 @@ internal static class MarkPassAsExpiredEndpoint
                 IEventBus eventBus,
                 CancellationToken cancellationToken) =>
             {
-                var pass = await persistence.Passes.FindAsync(new object[] { id }, cancellationToken: cancellationToken);
+                var pass = await persistence.Passes.FindAsync([id], cancellationToken: cancellationToken);
                 if (pass is null)
                 {
                     return Results.NotFound();

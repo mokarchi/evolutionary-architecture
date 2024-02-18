@@ -1,10 +1,9 @@
 ﻿namespace EvolutionaryArchitecture.Fitnet.Contracts.SignContract;
 
+using Common.Events.EventBus;
 using Common.Validation.Requests;
 using Data.Database;
-using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus;
-using EvolutionaryArchitecture.Fitnet.Contracts.PrepareContract.BusinessRules;
-using EvolutionaryArchitecture.Fitnet.Contracts.SignContract.Events;
+using Events;
 
 internal static class SignContractEndpoint
 {
@@ -15,13 +14,7 @@ internal static class SignContractEndpoint
                 TimeProvider timeProvider,
                 CancellationToken cancellationToken) =>
             {
-                var test = new ContractCanBePreparedOnlyForAdultRule(10);
-#pragma warning disable S1481
-                var _ = test.Error;
-#pragma warning restore S1481
-
-                var contract =
-                    await persistence.Contracts.FindAsync(new object[] { id }, cancellationToken: cancellationToken);
+                var contract = await persistence.Contracts.FindAsync([id], cancellationToken: cancellationToken);
 
                 if (contract is null)
                 {

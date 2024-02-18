@@ -5,9 +5,9 @@ using Common.TestEngine.Configuration;
 using Common.TestEngine.IntegrationEvents.Handlers;
 using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus;
 using EvolutionaryArchitecture.Fitnet.Offers.Prepare;
+using Fitnet.Passes.MarkPassAsExpired.Events;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NSubstitute;
-using Passes.MarkPassAsExpired.Events;
 
 public sealed class PrepareOfferTests : IClassFixture<WebApplicationFactory<Program>>,
     IClassFixture<DatabaseContainer>
