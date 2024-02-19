@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.FeatureManagement;
-
-namespace EvolutionaryArchitecture.Fitnet.Common.Infrastructure.Modules;
+﻿namespace EvolutionaryArchitecture.Fitnet.Common.Infrastructure.Modules;
 
 public static class ModuleAvailabilityChecker
 {

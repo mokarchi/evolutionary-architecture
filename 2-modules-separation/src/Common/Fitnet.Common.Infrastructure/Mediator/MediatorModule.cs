@@ -1,6 +1,5 @@
 ﻿namespace EvolutionaryArchitecture.Fitnet.Common.Infrastructure.Mediator;
 using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
 
 public static class MediatorModule
 {
