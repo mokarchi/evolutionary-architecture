@@ -2,6 +2,8 @@
 
 using System.Net;
 using System.Net.Http.Json;
+using Api;
+using Api.Prepare;
 using Common.IntegrationTests.TestEngine;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Configuration;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Database;

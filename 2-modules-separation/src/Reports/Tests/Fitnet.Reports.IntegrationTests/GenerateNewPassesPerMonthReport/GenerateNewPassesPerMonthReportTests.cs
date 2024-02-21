@@ -4,14 +4,15 @@ using System.Net;
 using System.Net.Http.Json;
 using Common.IntegrationTests.TestEngine;
 using Common.IntegrationTests.TestEngine.Configuration;
-using Common.IntegrationTests.TestEngine.Database;
-using Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
+using Contracts.IntegrationEvents;
+using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Database;
+using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
 using FluentAssertions;
+using GenerateNewPassesRegistrationsPerMonthReport.Dtos;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Reports;
 using TestData;
 
-[UsesVerify]
 public sealed class GenerateNewPassesPerMonthReportTests : IClassFixture<FitnetWebApplicationFactory<Program>>, IClassFixture<DatabaseContainer>
 {
     private readonly HttpClient _applicationHttpClient;

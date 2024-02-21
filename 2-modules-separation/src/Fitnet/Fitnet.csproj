@@ -6,7 +6,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.19.0.84025" />
+    <ProjectReference Include="..\Common\Fitnet.Common.Core\Fitnet.Common.Core.csproj" />
+    <ProjectReference Include="..\Common\Fitnet.Common.Api\Fitnet.Common.Api.csproj" />
+    <ProjectReference Include="..\Common\Fitnet.Common.Infrastructure\Fitnet.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Contracts\Fitnet.Contracts.Api\Fitnet.Contracts.Api.csproj" />
+    <ProjectReference Include="..\Contracts\Fitnet.Contracts.Api\Fitnet.Contracts.Api.csproj" />
+    <ProjectReference Include="..\Offers\Fitnet.Offers.Api\Fitnet.Offers.Api.csproj" />
+    <ProjectReference Include="..\Passes\Fitnet.Passes.Api\Fitnet.Passes.Api.csproj" />
+    <ProjectReference Include="..\Reports\Fitnet.Reports\Fitnet.Reports.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.20.0.85982" />
   </ItemGroup>
 
 </Project>

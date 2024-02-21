@@ -1,6 +1,7 @@
 ﻿namespace EvolutionaryArchitecture.Fitnet.Offers.IntegrationTests.Prepare;
 
 using Bogus;
+using Passes.IntegrationEvents;
 
 internal sealed class PassExpiredEventFaker : Faker<PassExpiredEvent>
 {

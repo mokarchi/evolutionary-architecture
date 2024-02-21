@@ -2,6 +2,9 @@
 
 using System.Net;
 using System.Net.Http.Json;
+using Api;
+using Api.Prepare;
+using Api.Sign;
 using Common.Infrastructure.Events.EventBus;
 using Common.IntegrationTests.TestEngine;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Configuration;

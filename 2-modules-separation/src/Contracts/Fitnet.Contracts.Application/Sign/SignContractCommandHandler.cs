@@ -3,6 +3,7 @@
 using Common.Api.ErrorHandling;
 using Common.Infrastructure.Events.EventBus;
 using Core;
+using IntegrationEvents;
 using JetBrains.Annotations;
 using MediatR;
 

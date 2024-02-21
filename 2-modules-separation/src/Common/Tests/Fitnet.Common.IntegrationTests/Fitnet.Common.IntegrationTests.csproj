@@ -4,7 +4,7 @@
     <PackageReference Include="Bogus" Version="35.4.0" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="8.2.0" />
-    <PackageReference Include="Verify.Xunit" Version="23.2.0" />
+    <PackageReference Include="Verify.Xunit" Version="23.2.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,7 +16,7 @@
     <PackageReference Include="xunit.categories" Version="2.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
-    <PackageReference Include="coverlet.collector" Version="6.0.0">
+    <PackageReference Include="coverlet.collector" Version="6.0.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.19.0.84025" />
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.20.0.85982" />
   </ItemGroup>
 
 </Project>

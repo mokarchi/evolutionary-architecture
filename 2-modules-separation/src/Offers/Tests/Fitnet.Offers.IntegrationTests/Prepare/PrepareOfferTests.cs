@@ -1,5 +1,6 @@
 ﻿namespace EvolutionaryArchitecture.Fitnet.Offers.IntegrationTests.Prepare;
 
+using Api.Prepare;
 using Common.Infrastructure.Events.EventBus;
 using Common.IntegrationTests.TestEngine;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Configuration;
@@ -7,6 +8,7 @@ using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Databas
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NSubstitute;
+using Passes.IntegrationEvents;
 
 public sealed class PrepareOfferTests : IClassFixture<FitnetWebApplicationFactory<Program>>,
     IClassFixture<DatabaseContainer>
