@@ -1,13 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.19.0.84025" />
+    <ProjectReference Include="..\..\Common\Fitnet.Common.Api\Fitnet.Common.Api.csproj" />
+    <ProjectReference Include="..\..\Common\Fitnet.Common.Infrastructure\Fitnet.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Contracts\Fitnet.Contracts.Application\Fitnet.Contracts.Application.csproj" />
+    <ProjectReference Include="..\Fitnet.Passes.DataAccess\Fitnet.Passes.DataAccess.csproj" />
+    <ProjectReference Include="..\Fitnet.Passes.IntegrationEvents\Fitnet.Passes.IntegrationEvents.csproj" />
   </ItemGroup>
-
 </Project>
