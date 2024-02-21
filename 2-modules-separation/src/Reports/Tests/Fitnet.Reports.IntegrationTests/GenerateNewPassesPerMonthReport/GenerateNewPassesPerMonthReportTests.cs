@@ -1,0 +1,61 @@
+﻿namespace EvolutionaryArchitecture.Fitnet.Reports.IntegrationTests.GenerateNewPassesPerMonthReport;
+
+using System.Net;
+using System.Net.Http.Json;
+using Common.IntegrationTests.TestEngine;
+using Common.IntegrationTests.TestEngine.Configuration;
+using Common.IntegrationTests.TestEngine.Database;
+using Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
+using FluentAssertions;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using TestData;
+
+[UsesVerify]
+public sealed class GenerateNewPassesPerMonthReportTests : IClassFixture<FitnetWebApplicationFactory<Program>>, IClassFixture<DatabaseContainer>
+{
+    private readonly HttpClient _applicationHttpClient;
+    private readonly WebApplicationFactory<Program> _applicationInMemoryFactory;
+
+    public GenerateNewPassesPerMonthReportTests(FitnetWebApplicationFactory<Program> applicationInMemoryFactory,
+        DatabaseContainer database)
+    {
+        _applicationInMemoryFactory = applicationInMemoryFactory
+            .WithContainerDatabaseConfigured(new ReportsDatabaseConfiguration(database.ConnectionString!))
+            .SetFakeSystemClock(ReportTestCases.FakeNowDate);
+
+        _applicationHttpClient = _applicationInMemoryFactory.CreateClient();
+    }
+
+    [Theory]
+    [ClassData(typeof(ReportTestCases))]
+    internal async Task Given_valid_generate_new_report_request_Then_should_return_correct_data(List<PassRegistrationDateRange> passRegistrationDateRanges)
+    {
+        // Arrange
+        await RegisterPasses(passRegistrationDateRanges);
+
+        // Act
+        var getReportResult = await _applicationHttpClient.GetAsync(ReportsApiPaths.GenerateNewReport);
+
+        // Assert
+        getReportResult.Should().HaveStatusCode(HttpStatusCode.OK);
+        var reportData = await getReportResult.Content.ReadFromJsonAsync<NewPassesRegistrationsPerMonthResponse>();
+        await Verify(reportData);
+    }
+
+    private async Task RegisterPasses(List<PassRegistrationDateRange> reportTestData)
+    {
+        foreach (var passRegistration in reportTestData)
+        {
+            await RegisterPass(passRegistration.From, passRegistration.To);
+        }
+    }
+
+    private async Task RegisterPass(DateTimeOffset from, DateTimeOffset to)
+    {
+        using var integrationEventHandlerScope =
+            new IntegrationEventHandlerScope<ContractSignedEvent>(_applicationInMemoryFactory);
+        var @event = ContractSignedEventFaker.Create(from, to);
+        await integrationEventHandlerScope.Consume(@event, CancellationToken.None);
+    }
+}
