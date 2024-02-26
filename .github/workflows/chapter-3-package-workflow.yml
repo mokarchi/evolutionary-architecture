@@ -4,14 +4,14 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Chapter-3-microservice-extraction/Fitnet.Common/**'
+      - '3-microservice-extraction/Fitnet.Common/**'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Chapter-3-microservice-extraction/Fitnet.Common/**'
+      - '3-microservice-extraction/Fitnet.Common/**'
 
 env:
-  CHAPTER_DIR: 'Chapter-3-microservice-extraction/Fitnet.Common'
+  CHAPTER_DIR: '3-microservice-extraction/Fitnet.Common'
 
 jobs: 
   build:
