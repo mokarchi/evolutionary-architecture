@@ -12,7 +12,7 @@
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<RepositoryUrl>https://github.com/mokarchi/evolutionary-architecture</RepositoryUrl>
-        <Version>1.1.9</Version>
+        <Version>1.0.0</Version>
     </PropertyGroup>
     
     <ItemGroup>
