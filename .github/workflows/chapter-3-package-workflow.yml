@@ -74,7 +74,7 @@ jobs:
       - name: Prepare Packages
         run: dotnet nuget add source --username $OWNER --password $GITHUB_TOKEN --store-password-in-clear-text --name github "https://nuget.pkg.github.com/$OWNER/index.json"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NUGET_API_KEY }}
           OWNER: ${{ github.repository_owner }}
           
       - name: Publish Packages
