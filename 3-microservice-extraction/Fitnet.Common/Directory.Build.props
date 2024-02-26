@@ -11,6 +11,8 @@
         <Nullable>enable</Nullable>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<RepositoryUrl>https://github.com/mokarchi/evolutionary-architecture</RepositoryUrl>
+        <Version>1.1.9</Version>
     </PropertyGroup>
     
     <ItemGroup>
