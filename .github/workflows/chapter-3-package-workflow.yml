@@ -72,14 +72,14 @@ jobs:
           dotnet pack Fitnet.Common.IntegrationTestsToolbox/Fitnet.Common.IntegrationTestsToolbox.csproj -c Release
 
       - name: Prepare Packages
-        run: dotnet nuget add source --username $OWNER --password $NUGET_API_KEY --store-password-in-clear-text --name github "https://api.nuget.org/v3/index.json"
+        run: dotnet nuget add source --username $OWNER --password $GITHUB_TOKEN --store-password-in-clear-text --name github "https://api.nuget.org/v3/index.json"
         env:
-          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           
       - name: Publish Packages
         run: |
-          dotnet nuget push "Fitnet.Common.Api/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Api.*.nupkg" --source "github" --api-key ${{ secrets.NUGET_API_KEY  }}
-          dotnet nuget push "Fitnet.Common.Core/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Core.*.nupkg" --source "github" --api-key ${{ secrets.NUGET_API_KEY  }}
-          dotnet nuget push "Fitnet.Common.Infrastructure/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Infrastructure.*.nupkg" --source "github" --api-key ${{ secrets.NUGET_API_KEY  }}
-          dotnet nuget push "Fitnet.Common.IntegrationTestsToolbox/bin/Release/EvolutionaryArchitecture.Fitnet.Common.IntegrationTestsToolbox.*.nupkg" --source "github" --api-key ${{ secrets.NUGET_API_KEY  }}
+          dotnet nuget push "Fitnet.Common.Api/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Api.*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN  }}
+          dotnet nuget push "Fitnet.Common.Core/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Core.*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN  }}
+          dotnet nuget push "Fitnet.Common.Infrastructure/bin/Release/EvolutionaryArchitecture.Fitnet.Common.Infrastructure.*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN  }}
+          dotnet nuget push "Fitnet.Common.IntegrationTestsToolbox/bin/Release/EvolutionaryArchitecture.Fitnet.Common.IntegrationTestsToolbox.*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN  }}
