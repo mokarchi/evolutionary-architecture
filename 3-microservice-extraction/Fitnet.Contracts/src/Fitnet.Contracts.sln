@@ -3,12 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{896DBCCF-6565-4122-9061-7D74BBF3302E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Api", "Fitnet.Contracts.Api\Fitnet.Contracts.Api.csproj", "{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Application", "Fitnet.Contracts.Application\Fitnet.Contracts.Application.csproj", "{75535A4B-B31E-45F3-9047-40DDBEE5F858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Core", "Fitnet.Contracts.Core\Fitnet.Contracts.Core.csproj", "{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Infrastructure", "Fitnet.Contracts.Infrastructure\Fitnet.Contracts.Infrastructure.csproj", "{50E64026-F5D2-4B1E-A710-EC104D00C21B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.IntegrationEvents", "Fitnet.Contracts.IntegrationEvents\Fitnet.Contracts.IntegrationEvents.csproj", "{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts", "Fitnet.Contracts\Fitnet.Contracts.csproj", "{A1A32258-0E63-449C-8480-C7924E9FB959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75535A4B-B31E-45F3-9047-40DDBEE5F858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75535A4B-B31E-45F3-9047-40DDBEE5F858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75535A4B-B31E-45F3-9047-40DDBEE5F858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75535A4B-B31E-45F3-9047-40DDBEE5F858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E64026-F5D2-4B1E-A710-EC104D00C21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E64026-F5D2-4B1E-A710-EC104D00C21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E64026-F5D2-4B1E-A710-EC104D00C21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E64026-F5D2-4B1E-A710-EC104D00C21B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A32258-0E63-449C-8480-C7924E9FB959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A32258-0E63-449C-8480-C7924E9FB959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A32258-0E63-449C-8480-C7924E9FB959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A32258-0E63-449C-8480-C7924E9FB959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A39AC8E4-1CBD-49BA-9101-741E6321E46C}
 	EndGlobalSection
 EndGlobal
