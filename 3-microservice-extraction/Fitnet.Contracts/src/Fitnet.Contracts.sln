@@ -5,17 +5,23 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{896DBCCF-6565-4122-9061-7D74BBF3302E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Api", "Fitnet.Contracts.Api\Fitnet.Contracts.Api.csproj", "{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts.Api", "Fitnet.Contracts.Api\Fitnet.Contracts.Api.csproj", "{E68B3694-56E7-4B36-ABFD-FBB69158B3CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Application", "Fitnet.Contracts.Application\Fitnet.Contracts.Application.csproj", "{75535A4B-B31E-45F3-9047-40DDBEE5F858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts.Application", "Fitnet.Contracts.Application\Fitnet.Contracts.Application.csproj", "{75535A4B-B31E-45F3-9047-40DDBEE5F858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Core", "Fitnet.Contracts.Core\Fitnet.Contracts.Core.csproj", "{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts.Core", "Fitnet.Contracts.Core\Fitnet.Contracts.Core.csproj", "{B43A11B0-3675-4EDD-A0C5-81EB3428B3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Infrastructure", "Fitnet.Contracts.Infrastructure\Fitnet.Contracts.Infrastructure.csproj", "{50E64026-F5D2-4B1E-A710-EC104D00C21B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts.Infrastructure", "Fitnet.Contracts.Infrastructure\Fitnet.Contracts.Infrastructure.csproj", "{50E64026-F5D2-4B1E-A710-EC104D00C21B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.IntegrationEvents", "Fitnet.Contracts.IntegrationEvents\Fitnet.Contracts.IntegrationEvents.csproj", "{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts.IntegrationEvents", "Fitnet.Contracts.IntegrationEvents\Fitnet.Contracts.IntegrationEvents.csproj", "{DE88B05B-C9BE-46FE-8994-B5A34D0B88B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts", "Fitnet.Contracts\Fitnet.Contracts.csproj", "{A1A32258-0E63-449C-8480-C7924E9FB959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fitnet.Contracts", "Fitnet.Contracts\Fitnet.Contracts.csproj", "{A1A32258-0E63-449C-8480-C7924E9FB959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Api.UnitTests", "Fitnet.Contracts.Api.UnitTests\Fitnet.Contracts.Api.UnitTests.csproj", "{2DBFE3AE-B724-4293-B8F8-343ECF59652B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.Core.UnitTests", "Fitnet.Contracts.Core.UnitTests\Fitnet.Contracts.Core.UnitTests.csproj", "{618371DC-5735-442D-9A92-EAA296953B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Contracts.IntegrationTests", "Fitnet.Contracts.IntegrationTests\Fitnet.Contracts.IntegrationTests.csproj", "{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,9 +53,26 @@ Global
 		{A1A32258-0E63-449C-8480-C7924E9FB959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1A32258-0E63-449C-8480-C7924E9FB959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1A32258-0E63-449C-8480-C7924E9FB959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBFE3AE-B724-4293-B8F8-343ECF59652B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBFE3AE-B724-4293-B8F8-343ECF59652B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBFE3AE-B724-4293-B8F8-343ECF59652B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBFE3AE-B724-4293-B8F8-343ECF59652B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{618371DC-5735-442D-9A92-EAA296953B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618371DC-5735-442D-9A92-EAA296953B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618371DC-5735-442D-9A92-EAA296953B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618371DC-5735-442D-9A92-EAA296953B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DBFE3AE-B724-4293-B8F8-343ECF59652B} = {896DBCCF-6565-4122-9061-7D74BBF3302E}
+		{618371DC-5735-442D-9A92-EAA296953B69} = {896DBCCF-6565-4122-9061-7D74BBF3302E}
+		{5C15A52E-A0F4-4F16-A73E-0A5BF1126E70} = {896DBCCF-6565-4122-9061-7D74BBF3302E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A39AC8E4-1CBD-49BA-9101-741E6321E46C}
