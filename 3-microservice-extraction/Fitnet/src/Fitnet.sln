@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Offers", "Offers", "{F137E331-2284-408C-9A4B-95C67CB02BEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Passes", "Passes", "{BDBA4226-A963-4203-A24C-2B924B271B1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{3F4DB879-8FA4-43A5-821B-D16535439578}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C8434EA9-11B2-4C7A-8861-3DABC063E469}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{382F99C3-D923-4BA2-911F-BA54B5CDC191}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3EAF9194-1539-4EFA-84EF-FDB7A71513A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Offers.Api", "Offers\Fitnet.Offers.Api\Fitnet.Offers.Api.csproj", "{FD522BF5-28FE-4EF9-816F-49472A16A5EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Offers.DataAccess", "Offers\Fitnet.Offers.DataAccess\Fitnet.Offers.DataAccess.csproj", "{A86074EF-AF4F-456D-BE82-15F056B3A5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Offers.IntegrationTests", "Offers\Tests\Fitnet.Offers.IntegrationTests\Fitnet.Offers.IntegrationTests.csproj", "{513C14D6-0477-4F4F-B7B8-B89409048B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Passes.Api", "Passes\Fitnet.Passes.Api\Fitnet.Passes.Api.csproj", "{DC2B1741-86FC-46BC-A65D-81EF8A3D7718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Passes.DataAccess", "Passes\Fitnet.Passes.DataAccess\Fitnet.Passes.DataAccess.csproj", "{EF134701-B96C-4F22-9F8F-9FCA566FDE64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Passes.IntegrationEvents", "Passes\Fitnet.Passes.IntegrationEvents\Fitnet.Passes.IntegrationEvents.csproj", "{6CC0D657-567E-447E-96F4-519C0A4DFD7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Passes.IntegrationTests", "Passes\Tests\Fitnet.Passes.IntegrationTests\Fitnet.Passes.IntegrationTests.csproj", "{2586D898-20A0-4E5F-B266-EDCA395EC44A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Reports", "Reports\Fitnet.Reports\Fitnet.Reports.csproj", "{4E994EC6-F940-4C96-9954-AB3861D88515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Reports.IntegrationTests", "Reports\Tests\Fitnet.Reports.IntegrationTests\Fitnet.Reports.IntegrationTests.csproj", "{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet", "Fitnet\Fitnet.csproj", "{B5A5A94E-D40E-41FE-B4E5-2D5E338083EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD522BF5-28FE-4EF9-816F-49472A16A5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD522BF5-28FE-4EF9-816F-49472A16A5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD522BF5-28FE-4EF9-816F-49472A16A5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD522BF5-28FE-4EF9-816F-49472A16A5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86074EF-AF4F-456D-BE82-15F056B3A5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86074EF-AF4F-456D-BE82-15F056B3A5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86074EF-AF4F-456D-BE82-15F056B3A5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86074EF-AF4F-456D-BE82-15F056B3A5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513C14D6-0477-4F4F-B7B8-B89409048B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513C14D6-0477-4F4F-B7B8-B89409048B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513C14D6-0477-4F4F-B7B8-B89409048B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513C14D6-0477-4F4F-B7B8-B89409048B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2B1741-86FC-46BC-A65D-81EF8A3D7718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2B1741-86FC-46BC-A65D-81EF8A3D7718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2B1741-86FC-46BC-A65D-81EF8A3D7718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2B1741-86FC-46BC-A65D-81EF8A3D7718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF134701-B96C-4F22-9F8F-9FCA566FDE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF134701-B96C-4F22-9F8F-9FCA566FDE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF134701-B96C-4F22-9F8F-9FCA566FDE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF134701-B96C-4F22-9F8F-9FCA566FDE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC0D657-567E-447E-96F4-519C0A4DFD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC0D657-567E-447E-96F4-519C0A4DFD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC0D657-567E-447E-96F4-519C0A4DFD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC0D657-567E-447E-96F4-519C0A4DFD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2586D898-20A0-4E5F-B266-EDCA395EC44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2586D898-20A0-4E5F-B266-EDCA395EC44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2586D898-20A0-4E5F-B266-EDCA395EC44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2586D898-20A0-4E5F-B266-EDCA395EC44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E994EC6-F940-4C96-9954-AB3861D88515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E994EC6-F940-4C96-9954-AB3861D88515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E994EC6-F940-4C96-9954-AB3861D88515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E994EC6-F940-4C96-9954-AB3861D88515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A5A94E-D40E-41FE-B4E5-2D5E338083EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A5A94E-D40E-41FE-B4E5-2D5E338083EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A5A94E-D40E-41FE-B4E5-2D5E338083EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A5A94E-D40E-41FE-B4E5-2D5E338083EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8434EA9-11B2-4C7A-8861-3DABC063E469} = {F137E331-2284-408C-9A4B-95C67CB02BEF}
+		{382F99C3-D923-4BA2-911F-BA54B5CDC191} = {BDBA4226-A963-4203-A24C-2B924B271B1A}
+		{3EAF9194-1539-4EFA-84EF-FDB7A71513A1} = {3F4DB879-8FA4-43A5-821B-D16535439578}
+		{FD522BF5-28FE-4EF9-816F-49472A16A5EE} = {F137E331-2284-408C-9A4B-95C67CB02BEF}
+		{A86074EF-AF4F-456D-BE82-15F056B3A5D3} = {F137E331-2284-408C-9A4B-95C67CB02BEF}
+		{513C14D6-0477-4F4F-B7B8-B89409048B9A} = {C8434EA9-11B2-4C7A-8861-3DABC063E469}
+		{DC2B1741-86FC-46BC-A65D-81EF8A3D7718} = {BDBA4226-A963-4203-A24C-2B924B271B1A}
+		{EF134701-B96C-4F22-9F8F-9FCA566FDE64} = {BDBA4226-A963-4203-A24C-2B924B271B1A}
+		{6CC0D657-567E-447E-96F4-519C0A4DFD7E} = {BDBA4226-A963-4203-A24C-2B924B271B1A}
+		{2586D898-20A0-4E5F-B266-EDCA395EC44A} = {382F99C3-D923-4BA2-911F-BA54B5CDC191}
+		{4E994EC6-F940-4C96-9954-AB3861D88515} = {3F4DB879-8FA4-43A5-821B-D16535439578}
+		{5B5BAE1B-5AFA-4081-A7C1-94FC67EC1F9A} = {3EAF9194-1539-4EFA-84EF-FDB7A71513A1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7D4B326-58E7-4819-BE65-0BA0E1178F21}
+	EndGlobalSection
+EndGlobal
