@@ -3,6 +3,7 @@
 using Common.Api.ErrorHandling;
 using Common.Core.SystemClock;
 using Core;
+using IntegrationEvents;
 using MassTransit;
 
 [UsedImplicitly]
