@@ -1,2 +1,2 @@
-global using System;
-global using System.Diagnostics.CodeAnalysis;
+﻿#pragma warning disable IDE0005
+#pragma warning restore IDE0005
