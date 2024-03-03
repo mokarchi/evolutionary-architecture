@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Passes.IntegrationTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet.Reports.IntegrationTests", "Reports\Tests\Fitnet.Reports.IntegrationTests\Fitnet.Reports.IntegrationTests.csproj", "{13355FC9-59C8-4741-9578-C7AC2CB59D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitnet", "Fitnet\Fitnet.csproj", "{7E0DE5F2-CF42-4AB0-93E9-114F0ACC729D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{13355FC9-59C8-4741-9578-C7AC2CB59D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13355FC9-59C8-4741-9578-C7AC2CB59D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13355FC9-59C8-4741-9578-C7AC2CB59D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0DE5F2-CF42-4AB0-93E9-114F0ACC729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0DE5F2-CF42-4AB0-93E9-114F0ACC729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0DE5F2-CF42-4AB0-93E9-114F0ACC729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0DE5F2-CF42-4AB0-93E9-114F0ACC729D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
