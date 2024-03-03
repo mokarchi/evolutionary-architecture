@@ -3,6 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Offers", "Offers", "{37124E39-6575-40DC-B7BD-2FBCE3E3BE72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Passes", "Passes", "{FDC5769C-D0B8-45A5-B628-4210F860DA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{FA085BDC-2AAC-4358-A1DF-66C218C213FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E32697CF-405D-43A7-9C58-34B197AD1274}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F7A1DF2A-B17A-4FE2-B788-769DC5110A8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{CA3337B1-BCF8-4D39-80D1-67FE7E0C539F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +22,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E32697CF-405D-43A7-9C58-34B197AD1274} = {37124E39-6575-40DC-B7BD-2FBCE3E3BE72}
+		{F7A1DF2A-B17A-4FE2-B788-769DC5110A8C} = {FDC5769C-D0B8-45A5-B628-4210F860DA41}
+		{CA3337B1-BCF8-4D39-80D1-67FE7E0C539F} = {FA085BDC-2AAC-4358-A1DF-66C218C213FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8181EC9A-5FD3-4986-8EA2-C83A0D0461E1}
 	EndGlobalSection
 EndGlobal
