@@ -1,23 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.0.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-    <PackageReference Include="xunit" Version="2.5.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+    <PackageReference Include="EvolutionaryArchitecture.Fitnet.Common.IntegrationTestsToolbox" Version="1.0.0" />
+    <PackageReference Include="EvolutionaryArchitecture.Fitnet.Contracts.IntegrationEvents" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <None Remove="appsettings.IntegrationTests.json" />
+    <Content Include="appsettings.IntegrationTests.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Fitnet\Fitnet.csproj" />
+    <ProjectReference Include="..\..\..\Passes\Fitnet.Passes.Api\Fitnet.Passes.Api.csproj" />
+    <ProjectReference Include="..\..\Fitnet.Reports\Fitnet.Reports.csproj" />
   </ItemGroup>
 
 </Project>

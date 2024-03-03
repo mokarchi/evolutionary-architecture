@@ -1,9 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Passes\Fitnet.Passes.IntegrationEvents\Fitnet.Passes.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\Fitnet.Offers.DataAccess\Fitnet.Offers.DataAccess.csproj" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="EvolutionaryArchitecture.Fitnet.Offers.IntegrationTests" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EvolutionaryArchitecture.Fitnet.Common.Core" Version="1.0.0" />
+  </ItemGroup>
 </Project>
