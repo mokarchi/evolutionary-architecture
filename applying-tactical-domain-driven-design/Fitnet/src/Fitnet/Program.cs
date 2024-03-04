@@ -1,34 +1,48 @@
+﻿using EvolutionaryArchitecture.Fitnet;
+using EvolutionaryArchitecture.Fitnet.Common.Api.ErrorHandling;
+using EvolutionaryArchitecture.Fitnet.Common.Core.SystemClock;
+using EvolutionaryArchitecture.Fitnet.Offers.Api;
+using EvolutionaryArchitecture.Fitnet.Passes.Api;
+using EvolutionaryArchitecture.Fitnet.Reports;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddSystemClock();
+builder.Services.AddFeatureManagement();
+
+builder.Services.AddPasses(builder.Configuration, Module.Passes);
+builder.Services.AddOffers(builder.Configuration, Module.Offers);
+builder.Services.AddReports(Module.Reports);
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseAuthorization();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-});
+app.UseErrorHandling();
+
+app.MapControllers();
+
+app.RegisterPasses(Module.Passes);
+app.RegisterOffers(Module.Offers);
+app.RegisterReports(Module.Reports);
 
 app.Run();
 
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+namespace EvolutionaryArchitecture.Fitnet
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    [UsedImplicitly]
+    public sealed class Program;
 }
